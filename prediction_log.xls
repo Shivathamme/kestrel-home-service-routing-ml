@@ -1,0 +1,7 @@
+timestamp,review_text,prediction
+2026-02-02T13:20:14.384391,battery backup is poor but performance is good,Negative
+2026-02-02T13:20:14.414632,excellent product and very fast delivery,Positive
+2026-02-02T13:20:14.420083,"average quality, not bad but not great",Negative
+2026-02-02T13:20:32.067642,battery backup is poor but performance is good,Negative
+2026-02-02T13:20:32.110703,excellent product and very fast delivery,Positive
+2026-02-02T13:20:32.124802,"average quality, not bad but not great",Negative

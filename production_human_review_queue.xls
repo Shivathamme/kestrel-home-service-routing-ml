@@ -1,0 +1,236 @@
+request_id,team,confidence_margin,Rule_Team,Rule_Status,routing_status
+SR510824,Filters & Consumables,2.67975820203048,Repairs,Single Rule Match,Human Review
+SR510825,Billing,1.5592475856008567,Installs & Demo,Single Rule Match,Human Review
+SR510845,Product Advice,0.2592541436839064,Warranty Claims,Single Rule Match,Human Review
+SR510849,Billing,1.7059754824893854,Warranty Claims,Single Rule Match,Human Review
+SR510860,Filters & Consumables,2.319507139759529,Repairs,Single Rule Match,Human Review
+SR510864,Repairs,0.06005729334675247,Filters & Consumables,Single Rule Match,Human Review
+SR510870,Product Advice,0.36563582387306764,,Multiple Rule Matches,Human Review
+SR510874,Billing,1.8392902351904592,Installs & Demo,Single Rule Match,Human Review
+SR510891,Billing,1.748601622403901,Repairs,Single Rule Match,Human Review
+SR510903,Billing,1.7420962187832814,,Multiple Rule Matches,Human Review
+SR510906,Filters & Consumables,2.097288105419617,Returns & Replacement,Single Rule Match,Human Review
+SR510908,Filters & Consumables,1.6294724036124733,Returns & Replacement,Single Rule Match,Human Review
+SR510911,Filters & Consumables,0.8821220228022408,Repairs,Single Rule Match,Human Review
+SR510913,Repairs,0.6191809596585842,,Multiple Rule Matches,Human Review
+SR510915,Warranty Claims,0.9613278144102155,Installs & Demo,Single Rule Match,Human Review
+SR510921,Filters & Consumables,1.6067351269110968,Returns & Replacement,Single Rule Match,Human Review
+SR510926,Billing,0.10845179129228599,,Multiple Rule Matches,Human Review
+SR510932,Billing,0.3808705912593801,,Multiple Rule Matches,Human Review
+SR510935,Product Advice,0.5543051349087921,,Multiple Rule Matches,Human Review
+SR510940,Warranty Claims,0.6956016612773039,,Multiple Rule Matches,Human Review
+SR510942,Filters & Consumables,1.4718506146485733,Returns & Replacement,Single Rule Match,Human Review
+SR510956,Filters & Consumables,0.6680694321339185,Repairs,Single Rule Match,Human Review
+SR510968,Filters & Consumables,2.1851552940881223,Returns & Replacement,Single Rule Match,Human Review
+SR510969,Filters & Consumables,0.7765858052883905,Repairs,Single Rule Match,Human Review
+SR510979,Filters & Consumables,0.8721254752687293,Repairs,Single Rule Match,Human Review
+SR510981,Billing,1.2586399767588288,,Multiple Rule Matches,Human Review
+SR510994,Billing,1.4274473985395362,Repairs,Single Rule Match,Human Review
+SR511024,Billing,1.8079266309519122,,Multiple Rule Matches,Human Review
+SR511035,Returns & Replacement,0.4586743952786127,,Multiple Rule Matches,Human Review
+SR511044,Filters & Consumables,2.281008883301185,Repairs,Single Rule Match,Human Review
+SR511046,Filters & Consumables,2.400619655666824,Repairs,Single Rule Match,Human Review
+SR511047,Filters & Consumables,1.0259907437406022,Repairs,Single Rule Match,Human Review
+SR511049,Returns & Replacement,0.023167904818039875,Returns & Replacement,Single Rule Match,Human Review
+SR511053,Filters & Consumables,2.1255647636228954,Repairs,Single Rule Match,Human Review
+SR511067,Filters & Consumables,2.08111285789004,Repairs,Single Rule Match,Human Review
+SR511074,Filters & Consumables,1.0345705081750902,Repairs,Single Rule Match,Human Review
+SR511085,Warranty Claims,1.1152782365050122,,Multiple Rule Matches,Human Review
+SR511089,Repairs,1.3132200133288057,Product Advice,Single Rule Match,Human Review
+SR511100,Product Advice,0.1483666901020288,,Multiple Rule Matches,Human Review
+SR511102,Billing,0.9141166123887745,,Multiple Rule Matches,Human Review
+SR511107,Billing,1.3169597633074592,Returns & Replacement,Single Rule Match,Human Review
+SR511124,Returns & Replacement,0.2943031196843157,Repairs,Single Rule Match,Human Review
+SR511132,Installs & Demo,0.5384673638613504,,Multiple Rule Matches,Human Review
+SR511141,Filters & Consumables,0.9710508860396933,Repairs,Single Rule Match,Human Review
+SR511150,Repairs,0.4772340627362629,,Multiple Rule Matches,Human Review
+SR511187,Filters & Consumables,0.1147002773707822,,No Rule Match,Human Review
+SR511193,Filters & Consumables,1.483985850020296,Repairs,Single Rule Match,Human Review
+SR511195,Filters & Consumables,0.3885949101707917,,Multiple Rule Matches,Human Review
+SR511197,Billing,0.01630612526013836,,Multiple Rule Matches,Human Review
+SR511263,Billing,2.278884851042784,,Multiple Rule Matches,Human Review
+SR511270,Repairs,0.37243842488200807,,Multiple Rule Matches,Human Review
+SR511281,Billing,2.2689638815687165,Installs & Demo,Single Rule Match,Human Review
+SR511293,Billing,0.7575740423209407,,Multiple Rule Matches,Human Review
+SR511300,Filters & Consumables,0.18230361939766332,Repairs,Single Rule Match,Human Review
+SR511334,Filters & Consumables,0.6287149871854277,Billing,Single Rule Match,Human Review
+SR511347,Billing,1.7951862943672472,Installs & Demo,Single Rule Match,Human Review
+SR511353,Billing,1.7600423885622196,Installs & Demo,Single Rule Match,Human Review
+SR511354,Installs & Demo,0.2845255264113843,,Multiple Rule Matches,Human Review
+SR511371,Billing,0.811948638454693,,Multiple Rule Matches,Human Review
+SR511382,Repairs,1.0128786616630583,Product Advice,Single Rule Match,Human Review
+SR511393,Installs & Demo,0.09663267525448666,Installs & Demo,Single Rule Match,Human Review
+SR511401,Filters & Consumables,1.601221105796903,Repairs,Single Rule Match,Human Review
+SR511403,Billing,0.8664364536105511,Repairs,Single Rule Match,Human Review
+SR511422,Filters & Consumables,1.4900972058615567,Repairs,Single Rule Match,Human Review
+SR511423,Repairs,0.8237092394556345,Billing,Single Rule Match,Human Review
+SR511433,Billing,2.105601924803513,Repairs,Single Rule Match,Human Review
+SR511456,Billing,2.391065020070876,,Multiple Rule Matches,Human Review
+SR511458,Repairs,0.14405636045373355,Repairs,Single Rule Match,Human Review
+SR511464,Filters & Consumables,3.5288246347570054,,Multiple Rule Matches,Human Review
+SR511465,Returns & Replacement,0.5751917900834754,,Multiple Rule Matches,Human Review
+SR511485,Billing,0.15112726204912727,,No Rule Match,Human Review
+SR511491,Filters & Consumables,0.27078912886987494,Repairs,Single Rule Match,Human Review
+SR511495,Billing,0.8922101076608514,,Multiple Rule Matches,Human Review
+SR511497,Billing,0.3529439827380178,,Multiple Rule Matches,Human Review
+SR511505,Billing,1.7485120337211146,Warranty Claims,Single Rule Match,Human Review
+SR511508,Billing,0.7687248321742184,,Multiple Rule Matches,Human Review
+SR511510,Billing,1.9307939468501725,Returns & Replacement,Single Rule Match,Human Review
+SR511518,Billing,1.9446285205745646,,Multiple Rule Matches,Human Review
+SR511521,Filters & Consumables,3.1778394724680608,Repairs,Single Rule Match,Human Review
+SR511527,Filters & Consumables,0.20959333168631722,Repairs,Single Rule Match,Human Review
+SR511558,Warranty Claims,0.5099358619592108,Returns & Replacement,Single Rule Match,Human Review
+SR511569,Warranty Claims,0.23586183096065957,,Multiple Rule Matches,Human Review
+SR511575,Billing,1.6373924557807507,Repairs,Single Rule Match,Human Review
+SR511589,Filters & Consumables,0.0584655925033058,,No Rule Match,Human Review
+SR511618,Filters & Consumables,1.7431587963649124,Repairs,Single Rule Match,Human Review
+SR511631,Billing,1.9210960193731292,Returns & Replacement,Single Rule Match,Human Review
+SR511635,Billing,1.6121123727929045,,Multiple Rule Matches,Human Review
+SR511647,Billing,2.0200623923080125,Repairs,Single Rule Match,Human Review
+SR511648,Product Advice,0.04875803426244629,,Multiple Rule Matches,Human Review
+SR511656,Installs & Demo,0.6322803784691706,,Multiple Rule Matches,Human Review
+SR511660,Billing,1.5775205125241398,Returns & Replacement,Single Rule Match,Human Review
+SR511672,Filters & Consumables,2.254388801532764,Returns & Replacement,Single Rule Match,Human Review
+SR511682,Filters & Consumables,1.1956838407483725,Repairs,Single Rule Match,Human Review
+SR511695,Filters & Consumables,2.9215995942349293,Repairs,Single Rule Match,Human Review
+SR511717,Billing,1.7482960366730267,Warranty Claims,Single Rule Match,Human Review
+SR511723,Returns & Replacement,0.07019875019951982,Billing,Single Rule Match,Human Review
+SR511727,Filters & Consumables,2.1666829471706106,Repairs,Single Rule Match,Human Review
+SR511740,Repairs,0.778154232519654,,Multiple Rule Matches,Human Review
+SR511743,Billing,2.167528339909418,Warranty Claims,Single Rule Match,Human Review
+SR511754,Billing,2.751207239235252,Warranty Claims,Single Rule Match,Human Review
+SR511755,Filters & Consumables,3.6393146335624507,Returns & Replacement,Single Rule Match,Human Review
+SR511763,Filters & Consumables,3.198910648750698,Returns & Replacement,Single Rule Match,Human Review
+SR511783,Billing,1.7590876722208553,Warranty Claims,Single Rule Match,Human Review
+SR511801,Filters & Consumables,1.7598745159447904,Repairs,Single Rule Match,Human Review
+SR511802,Filters & Consumables,1.804411191733724,Returns & Replacement,Single Rule Match,Human Review
+SR511817,Product Advice,0.2763402611273444,,Multiple Rule Matches,Human Review
+SR511829,Billing,0.8121523023424266,,Multiple Rule Matches,Human Review
+SR511839,Repairs,0.8270147177043592,Billing,Single Rule Match,Human Review
+SR511848,Installs & Demo,0.31092243064664604,,Multiple Rule Matches,Human Review
+SR511851,Filters & Consumables,0.8445479985843034,Repairs,Single Rule Match,Human Review
+SR511863,Billing,1.925305390044445,Repairs,Single Rule Match,Human Review
+SR511865,Filters & Consumables,1.643290494182062,Returns & Replacement,Single Rule Match,Human Review
+SR511872,Billing,1.1013351008866508,Product Advice,Single Rule Match,Human Review
+SR511881,Billing,2.3347146961939877,Returns & Replacement,Single Rule Match,Human Review
+SR511930,Filters & Consumables,2.907622055133709,Repairs,Single Rule Match,Human Review
+SR511937,Filters & Consumables,3.005682365099247,Repairs,Single Rule Match,Human Review
+SR511938,Repairs,0.02735067411587,Filters & Consumables,Single Rule Match,Human Review
+SR511949,Installs & Demo,0.32593397430915805,,Multiple Rule Matches,Human Review
+SR511951,Billing,0.7005752141877921,Repairs,Single Rule Match,Human Review
+SR511960,Filters & Consumables,0.959172903768896,Repairs,Single Rule Match,Human Review
+SR511970,Billing,2.099030184135203,,Multiple Rule Matches,Human Review
+SR511979,Filters & Consumables,0.20434014438361292,Returns & Replacement,Single Rule Match,Human Review
+SR511980,Billing,0.026052703775486297,,Multiple Rule Matches,Human Review
+SR511983,Billing,1.5646983138562036,Repairs,Single Rule Match,Human Review
+SR511987,Product Advice,0.0959578214167659,,Multiple Rule Matches,Human Review
+SR511990,Installs & Demo,0.07430365107588272,Installs & Demo,Single Rule Match,Human Review
+SR512008,Repairs,1.3087253756510049,,Multiple Rule Matches,Human Review
+SR512009,Filters & Consumables,0.8528905494294805,Repairs,Single Rule Match,Human Review
+SR512027,Warranty Claims,0.8076991298991311,Product Advice,Single Rule Match,Human Review
+SR512031,Filters & Consumables,1.9199840745319823,Repairs,Single Rule Match,Human Review
+SR512041,Billing,2.237437666506341,Repairs,Single Rule Match,Human Review
+SR512053,Billing,1.5239907698598518,Installs & Demo,Single Rule Match,Human Review
+SR512059,Filters & Consumables,1.9561481506935654,Repairs,Single Rule Match,Human Review
+SR512063,Billing,1.8560767553397357,,Multiple Rule Matches,Human Review
+SR512104,Repairs,0.48362464302749697,Billing,Single Rule Match,Human Review
+SR512108,Repairs,0.5930393229608747,Warranty Claims,Single Rule Match,Human Review
+SR512126,Billing,1.8587423691159306,Installs & Demo,Single Rule Match,Human Review
+SR512151,Filters & Consumables,1.094358718469227,Repairs,Single Rule Match,Human Review
+SR512158,Billing,2.240585412738959,Installs & Demo,Single Rule Match,Human Review
+SR512169,Billing,1.7927669604383563,Repairs,Single Rule Match,Human Review
+SR512182,Returns & Replacement,0.5570196571231201,,Multiple Rule Matches,Human Review
+SR512184,Filters & Consumables,2.4751817922604356,Repairs,Single Rule Match,Human Review
+SR512185,Billing,1.6344452675151513,Repairs,Single Rule Match,Human Review
+SR512188,Billing,1.784770379998641,Returns & Replacement,Single Rule Match,Human Review
+SR512190,Billing,1.6243575480437018,,Multiple Rule Matches,Human Review
+SR512191,Product Advice,0.010268460210604291,Repairs,Single Rule Match,Human Review
+SR512195,Filters & Consumables,0.861251516462733,Repairs,Single Rule Match,Human Review
+SR512205,Billing,2.0709611842345748,Installs & Demo,Single Rule Match,Human Review
+SR512248,Billing,1.6103045783563386,Warranty Claims,Single Rule Match,Human Review
+SR512252,Warranty Claims,0.2728245321602411,,Multiple Rule Matches,Human Review
+SR512253,Billing,1.8432073181252266,Installs & Demo,Single Rule Match,Human Review
+SR512263,Filters & Consumables,1.832355150743662,Repairs,Single Rule Match,Human Review
+SR512275,Repairs,0.2864696993684827,Product Advice,Single Rule Match,Human Review
+SR512276,Billing,1.7995721454946816,,Multiple Rule Matches,Human Review
+SR512278,Billing,1.672322227231255,Repairs,Single Rule Match,Human Review
+SR512279,Filters & Consumables,3.1811531269205173,Repairs,Single Rule Match,Human Review
+SR512294,Filters & Consumables,4.281750393332862,Repairs,Single Rule Match,Human Review
+SR512299,Filters & Consumables,1.4517512464027704,Repairs,Single Rule Match,Human Review
+SR512315,Product Advice,1.001024904859269,,Multiple Rule Matches,Human Review
+SR512317,Repairs,0.240367245504236,Warranty Claims,Single Rule Match,Human Review
+SR512321,Filters & Consumables,3.6110125591410416,Repairs,Single Rule Match,Human Review
+SR512329,Billing,2.132331042686143,Installs & Demo,Single Rule Match,Human Review
+SR512344,Repairs,0.6679349841820017,,Multiple Rule Matches,Human Review
+SR512345,Filters & Consumables,0.6377736603858872,Repairs,Single Rule Match,Human Review
+SR512346,Filters & Consumables,1.9205232366314213,Returns & Replacement,Single Rule Match,Human Review
+SR512354,Filters & Consumables,0.744950514012032,Repairs,Single Rule Match,Human Review
+SR512367,Billing,1.5017497257585122,Repairs,Single Rule Match,Human Review
+SR512368,Billing,0.5945232301074581,,Multiple Rule Matches,Human Review
+SR512372,Billing,0.2376915091332824,Repairs,Single Rule Match,Human Review
+SR512373,Filters & Consumables,3.3954079406381923,Returns & Replacement,Single Rule Match,Human Review
+SR512376,Repairs,0.19626271918566818,,Multiple Rule Matches,Human Review
+SR512384,Filters & Consumables,2.2900140758827376,Repairs,Single Rule Match,Human Review
+SR512385,Repairs,1.135902981633287,Installs & Demo,Single Rule Match,Human Review
+SR512404,Installs & Demo,0.12207724502935408,,Multiple Rule Matches,Human Review
+SR512406,Product Advice,0.4461999161643392,,Multiple Rule Matches,Human Review
+SR512427,Billing,1.7707081337230135,Warranty Claims,Single Rule Match,Human Review
+SR512428,Filters & Consumables,3.2371985165761683,Returns & Replacement,Single Rule Match,Human Review
+SR512434,Filters & Consumables,0.4935410806813137,,Multiple Rule Matches,Human Review
+SR512445,Filters & Consumables,1.8434666683221028,Repairs,Single Rule Match,Human Review
+SR512446,Installs & Demo,0.11686430658207775,,Multiple Rule Matches,Human Review
+SR512461,Billing,1.7644563882435884,Returns & Replacement,Single Rule Match,Human Review
+SR512468,Filters & Consumables,1.79146685758545,Repairs,Single Rule Match,Human Review
+SR512494,Returns & Replacement,0.9846432895577902,,Multiple Rule Matches,Human Review
+SR512500,Billing,1.6160680353039623,,Multiple Rule Matches,Human Review
+SR512503,Repairs,0.6679931843696557,Filters & Consumables,Single Rule Match,Human Review
+SR512516,Billing,1.524544228715405,Repairs,Single Rule Match,Human Review
+SR512537,Filters & Consumables,3.8924437447371516,Repairs,Single Rule Match,Human Review
+SR512547,Billing,1.4239089770193065,Installs & Demo,Single Rule Match,Human Review
+SR512549,Billing,1.4573962701162122,Repairs,Single Rule Match,Human Review
+SR512555,Filters & Consumables,2.289893391417859,Returns & Replacement,Single Rule Match,Human Review
+SR512560,Filters & Consumables,1.6621800986687085,Repairs,Single Rule Match,Human Review
+SR512568,Billing,1.6317945505347118,Returns & Replacement,Single Rule Match,Human Review
+SR512577,Filters & Consumables,1.928404840440145,Returns & Replacement,Single Rule Match,Human Review
+SR512583,Billing,2.048561285781438,,Multiple Rule Matches,Human Review
+SR512590,Billing,1.9440925034303878,Warranty Claims,Single Rule Match,Human Review
+SR512598,Billing,2.171642760603106,Returns & Replacement,Single Rule Match,Human Review
+SR512604,Billing,2.089656201386512,Returns & Replacement,Single Rule Match,Human Review
+SR512612,Billing,1.8229046901885604,,Multiple Rule Matches,Human Review
+SR512618,Billing,1.5168877615048717,Warranty Claims,Single Rule Match,Human Review
+SR512633,Filters & Consumables,1.4111855723270201,Repairs,Single Rule Match,Human Review
+SR512642,Filters & Consumables,0.5704911382867465,Repairs,Single Rule Match,Human Review
+SR512653,Repairs,1.972478880721924,Filters & Consumables,Single Rule Match,Human Review
+SR512655,Filters & Consumables,1.782548028270313,Returns & Replacement,Single Rule Match,Human Review
+SR512656,Filters & Consumables,1.9049558407463725,Returns & Replacement,Single Rule Match,Human Review
+SR512674,Filters & Consumables,1.4152047707802402,Repairs,Single Rule Match,Human Review
+SR512677,Product Advice,0.23136864204469704,,Multiple Rule Matches,Human Review
+SR512701,Filters & Consumables,1.8129123847650048,Repairs,Single Rule Match,Human Review
+SR512714,Filters & Consumables,0.5369050252166205,Billing,Single Rule Match,Human Review
+SR512736,Billing,1.9779003346295703,Installs & Demo,Single Rule Match,Human Review
+SR512743,Filters & Consumables,1.6676943636155503,Repairs,Single Rule Match,Human Review
+SR512749,Warranty Claims,0.0004503570761258957,,Multiple Rule Matches,Human Review
+SR512754,Filters & Consumables,3.188823260651456,Repairs,Single Rule Match,Human Review
+SR512755,Filters & Consumables,0.3974565541274638,Repairs,Single Rule Match,Human Review
+SR512762,Repairs,0.13762084902996646,,No Rule Match,Human Review
+SR512771,Warranty Claims,0.5357783561706005,Repairs,Single Rule Match,Human Review
+SR512793,Repairs,0.42957362371621144,,Multiple Rule Matches,Human Review
+SR512797,Returns & Replacement,0.7398984883613352,,Multiple Rule Matches,Human Review
+SR512816,Filters & Consumables,0.18684844345639995,,No Rule Match,Human Review
+SR512830,Filters & Consumables,3.8999323647728312,Repairs,Single Rule Match,Human Review
+SR512850,Billing,1.7815943481157408,Returns & Replacement,Single Rule Match,Human Review
+SR512856,Billing,1.710300965609458,,Multiple Rule Matches,Human Review
+SR512865,Returns & Replacement,0.029983263892411516,,Multiple Rule Matches,Human Review
+SR512878,Repairs,1.409509839472984,Returns & Replacement,Single Rule Match,Human Review
+SR512897,Filters & Consumables,1.3042271059788517,Returns & Replacement,Single Rule Match,Human Review
+SR512941,Billing,1.0928005477784457,Repairs,Single Rule Match,Human Review
+SR512949,Product Advice,0.2460180981547374,,Multiple Rule Matches,Human Review
+SR512959,Billing,0.17150961878757248,,Multiple Rule Matches,Human Review
+SR512965,Repairs,0.1736749988705134,,Multiple Rule Matches,Human Review
+SR512972,Installs & Demo,0.1009322011335479,,Multiple Rule Matches,Human Review
+SR512974,Billing,1.3033029518244883,Installs & Demo,Single Rule Match,Human Review
+SR512975,Billing,1.9419917758888474,,Multiple Rule Matches,Human Review
+SR512977,Billing,2.0409363558996008,Returns & Replacement,Single Rule Match,Human Review
+SR512991,Repairs,0.6530164014090336,,Multiple Rule Matches,Human Review
+SR512994,Billing,1.9942041689349281,Installs & Demo,Single Rule Match,Human Review
+SR512997,Billing,0.43405279318539153,,Multiple Rule Matches,Human Review
