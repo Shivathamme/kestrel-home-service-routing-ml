@@ -1,242 +1,192 @@
+%%writefile app.py
 
-%%writefile kestrel_huggingface_app/app.py
-
-import gradio as gr
+import streamlit as st
 import joblib
 import pandas as pd
 from pathlib import Path
+from datetime import date, time
 
 # =====================================
-# 1. LOAD TRAINED MODEL
+# 1. PAGE CONFIGURATION
 # =====================================
 
-MODEL_PATH = Path(__file__).parent / "kestrel_routing_model.pkl"
+st.set_page_config(
+    page_title="Kestrel Service Routing",
+    page_icon="🏠",
+    layout="wide"
+)
 
-model = joblib.load(MODEL_PATH)
-
-print("Kestrel Routing Model Loaded Successfully!")
-
-
-# =====================================
-# 2. PREDICTION FUNCTION
-# =====================================
-
-def predict_team(
-    request_text,
-    channel,
-    product_family,
-    warranty_status,
-    source,
-    request_datetime
-):
-
-    try:
-        # Validate customer request
-        if not request_text or not request_text.strip():
-            return "Please enter a customer request."
-
-        if not request_datetime:
-            return "Please enter the request date and time."
-
-        # Convert timestamp
-        dt = pd.to_datetime(request_datetime, errors="raise")
-
-        # =====================================
-        # 3. FEATURE ENGINEERING
-        # Same logic as model training
-        # =====================================
-
-        request_hour = dt.hour
-
-        request_day = dt.dayofweek
-
-        request_month = dt.month
-
-        request_day_of_month = dt.day
-
-        is_weekend = int(request_day >= 5)
-
-        # Original training time-period logic
-        if 5 <= request_hour < 12:
-            time_period = "Morning"
-
-        elif 12 <= request_hour < 17:
-            time_period = "Afternoon"
-
-        elif 17 <= request_hour < 21:
-            time_period = "Evening"
-
-        else:
-            time_period = "Night"
-
-        # =====================================
-        # 4. PREPARE MODEL INPUT
-        # =====================================
-
-        input_data = pd.DataFrame([{
-            "request_text": request_text,
-            "channel": channel,
-            "product_family": product_family,
-            "warranty_status": warranty_status,
-            "source": source,
-            "time_period": time_period,
-            "request_hour": request_hour,
-            "request_day": request_day,
-            "request_month": request_month,
-            "request_day_of_month": request_day_of_month,
-            "is_weekend": is_weekend
-        }])
-
-        # Ensure exact training feature order
-        feature_columns = [
-            "request_text",
-            "channel",
-            "product_family",
-            "warranty_status",
-            "source",
-            "time_period",
-            "request_hour",
-            "request_day",
-            "request_month",
-            "request_day_of_month",
-            "is_weekend"
-        ]
-
-        input_data = input_data[feature_columns]
-
-        # =====================================
-        # 5. MODEL PREDICTION
-        # =====================================
-
-        prediction = model.predict(input_data)[0]
-
-        # =====================================
-        # 6. CONFIDENCE MARGIN
-        # =====================================
-
-        decision_scores = model.decision_function(input_data)
-
-        sorted_scores = sorted(
-            decision_scores[0],
-            reverse=True
-        )
-
-        confidence_margin = (
-            sorted_scores[0] - sorted_scores[1]
-        )
-
-        # This is a decision-score margin,
-        # not a calibrated probability.
-
-        if confidence_margin < 0.20:
-            routing_status = "Human Review Required"
-        else:
-            routing_status = "Automatic Routing"
-
-        # =====================================
-        # 7. DISPLAY RESULT
-        # =====================================
-
-        result = f"""
-        PREDICTION RESULT
-
-        Recommended Team: {prediction}
-
-        Confidence Margin: {confidence_margin:.4f}
-
-        Routing Status: {routing_status}
-
-        Request Date: {dt.strftime('%d-%m-%Y')}
-
-        Request Time: {dt.strftime('%I:%M %p')}
-        """
-
-        return result
-
-    except Exception as e:
-        return f"Prediction Error: {str(e)}"
-
+st.title("🏠 Kestrel Home Service Request Routing")
+st.subheader("AI-Powered Customer Service Request Classification")
 
 # =====================================
-# 8. GRADIO WEB APPLICATION
+# 2. LOAD TRAINED MODEL
 # =====================================
 
-with gr.Blocks(title="Kestrel Service Routing") as demo:
+@st.cache_resource
+def load_model():
+    model_path = Path(__file__).parent / "kestrel_routing_model.pkl"
+    return joblib.load(model_path)
 
-    gr.Markdown(
-        """
-        # Kestrel Home Service Request Routing
+try:
+    model = load_model()
+    st.success("Routing model loaded successfully!")
+except Exception as e:
+    st.error(f"Model loading error: {e}")
+    st.stop()
 
-        ### AI-Powered Customer Service Request Classification
+# =====================================
+# 3. CUSTOMER INPUT FORM
+# =====================================
 
-        Enter customer request details to predict
-        the responsible service team.
-        """
+with st.form("routing_form"):
+
+    request_text = st.text_area(
+        "Customer Request",
+        placeholder="Describe the customer's issue..."
     )
 
-    with gr.Row():
+    col1, col2 = st.columns(2)
 
-        request_text = gr.Textbox(
-            label="Customer Request",
-            placeholder="Describe the customer's issue...",
-            lines=4
-        )
-
-        request_datetime = gr.Textbox(
-            label="Request Date and Time",
-            value="2026-11-26 10:30"
-        )
-
-    with gr.Row():
-
-        channel = gr.Textbox(
-            label="Channel",
-            value="whatsapp"
-        )
-
-        product_family = gr.Textbox(
-            label="Product Family",
+    with col1:
+        channel = st.text_input("Channel", value="whatsapp")
+        product_family = st.text_input(
+            "Product Family",
             value="Water Purifier"
         )
-
-    with gr.Row():
-
-        warranty_status = gr.Textbox(
-            label="Warranty Status",
+        warranty_status = st.text_input(
+            "Warranty Status",
             value="in_warranty"
         )
 
-        source = gr.Textbox(
-            label="Source",
-            value="crm"
+    with col2:
+        source = st.text_input("Source", value="crm")
+        request_date = st.date_input(
+            "Request Date",
+            value=date.today()
+        )
+        request_time = st.time_input(
+            "Request Time",
+            value=time(10, 30)
         )
 
-    predict_button = gr.Button(
+    submitted = st.form_submit_button(
         "Predict Service Team",
-        variant="primary"
-    )
-
-    output = gr.Textbox(
-        label="Routing Prediction",
-        lines=8
-    )
-
-    predict_button.click(
-        fn=predict_team,
-        inputs=[
-            request_text,
-            channel,
-            product_family,
-            warranty_status,
-            source,
-            request_datetime
-        ],
-        outputs=output
+        type="primary"
     )
 
 # =====================================
-# 9. LAUNCH APPLICATION
+# 4. PREDICTION
 # =====================================
 
-if __name__ == "__main__":
-    demo.launch()
+if submitted:
+
+    if not request_text.strip():
+        st.warning("Please enter a customer request.")
+
+    else:
+        try:
+            dt = pd.Timestamp.combine(
+                request_date,
+                request_time
+            )
+
+            request_hour = dt.hour
+            request_day = dt.dayofweek
+            request_month = dt.month
+            request_day_of_month = dt.day
+            is_weekend = int(request_day >= 5)
+
+            if 5 <= request_hour < 12:
+                time_period = "Morning"
+            elif 12 <= request_hour < 17:
+                time_period = "Afternoon"
+            elif 17 <= request_hour < 21:
+                time_period = "Evening"
+            else:
+                time_period = "Night"
+
+            input_data = pd.DataFrame([{
+                "request_text": request_text,
+                "channel": channel,
+                "product_family": product_family,
+                "warranty_status": warranty_status,
+                "source": source,
+                "time_period": time_period,
+                "request_hour": request_hour,
+                "request_day": request_day,
+                "request_month": request_month,
+                "request_day_of_month": request_day_of_month,
+                "is_weekend": is_weekend
+            }])
+
+            feature_columns = [
+                "request_text",
+                "channel",
+                "product_family",
+                "warranty_status",
+                "source",
+                "time_period",
+                "request_hour",
+                "request_day",
+                "request_month",
+                "request_day_of_month",
+                "is_weekend"
+            ]
+
+            input_data = input_data[feature_columns]
+
+            prediction = model.predict(input_data)[0]
+
+            decision_scores = model.decision_function(input_data)
+
+            sorted_scores = sorted(
+                decision_scores[0],
+                reverse=True
+            )
+
+            confidence_margin = (
+                sorted_scores[0] - sorted_scores[1]
+            )
+
+            if confidence_margin < 0.20:
+                routing_status = "Human Review Required"
+            else:
+                routing_status = "Automatic Routing"
+
+            # =====================================
+            # 5. DISPLAY RESULTS
+            # =====================================
+
+            st.divider()
+            st.subheader("Prediction Result")
+
+            st.success(f"Recommended Team: {prediction}")
+
+            col1, col2 = st.columns(2)
+
+            col1.metric(
+                "Confidence Margin",
+                f"{confidence_margin:.4f}"
+            )
+
+            col2.write("**Routing Status**")
+            if routing_status == "Automatic Routing":
+                col2.success(routing_status)
+            else:
+                col2.warning(routing_status)
+
+            st.write(
+                f"**Request Date:** {dt.strftime('%d-%m-%Y')}"
+            )
+            st.write(
+                f"**Request Time:** {dt.strftime('%I:%M %p')}"
+            )
+
+            st.caption(
+                "Confidence margin is a decision-score difference, "
+                "not a calibrated probability."
+            )
+
+        except Exception as e:
+            st.error(f"Prediction Error: {e}")
